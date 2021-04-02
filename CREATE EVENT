@@ -1,2 +1,5 @@
+//creates intensity variable and pairs it with the intensity value in the shader
 intensity = shader_get_uniform(shd_chrabb, "intensity");
+
+//shader is enabled by default
 enabled = 1;
