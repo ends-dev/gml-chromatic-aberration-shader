@@ -1,8 +1,13 @@
 if enabled = 1
 {
+//sets shader
 shader_set(shd_chrabb);
+//sets intensity
 shader_set_uniform_f(intensity, 1.0);
 }
 
+//draws the object's sprite
 draw_self();
+
+//resets the shader
 shader_reset();
