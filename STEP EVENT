@@ -1,3 +1,4 @@
+//checks spacebar to enable or disable the shader
 if keyboard_check_released(vk_space)
 {
 	enabled = !enabled;
