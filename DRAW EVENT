@@ -1,0 +1,8 @@
+if enabled = 1
+{
+shader_set(shd_chrabb);
+shader_set_uniform_f(intensity, 1.0);
+}
+
+draw_self();
+shader_reset();
