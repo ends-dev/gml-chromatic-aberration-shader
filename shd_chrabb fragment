@@ -1,0 +1,19 @@
+varying vec2 v_vTexcoord;
+varying vec4 v_vColour;
+
+//(set in Draw Event)
+uniform float intensity;
+
+void main()
+{
+    vec4 basecolor = texture2D( gm_BaseTexture, v_vTexcoord );
+	vec4 newcolor = basecolor;
+	float adj_amt = intensity / 100.0;
+		
+		newcolor.r = texture2D(gm_BaseTexture, vec2(v_vTexcoord.x + adj_amt, v_vTexcoord.y + adj_amt)).r;
+		newcolor.g = basecolor.g;
+		newcolor.b = texture2D(gm_BaseTexture, vec2(v_vTexcoord.x - adj_amt, v_vTexcoord.y - adj_amt)).b;
+
+	
+	gl_FragColor = newcolor;
+}
