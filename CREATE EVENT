@@ -2,4 +2,5 @@
 intensity = shader_get_uniform(shd_chrabb, "intensity");
 
 //shader is enabled by default
+//change value from 1 to 0 to have it disabled by default
 enabled = 1;
