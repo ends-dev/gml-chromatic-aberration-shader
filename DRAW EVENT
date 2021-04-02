@@ -7,6 +7,7 @@ shader_set_uniform_f(intensity, 1.0);
 }
 
 //draws the object's sprite
+//if object has no assigned sprite, this is where you'd draw the intended graphic
 draw_self();
 
 //resets the shader
